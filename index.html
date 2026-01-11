@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update from Finest Enterprises</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --text-dark: #2c2c2c;
+        }
+        
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background-color: #f9f9f9;
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .letter-container {
+            background-color: white;
+            width: 100%;
+            max-width: 700px;
+            padding: 60px 50px;
+            box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            position: relative;
+            /* Elegant paper texture overlay effect */
+            background-image: linear-gradient(to bottom right, #ffffff, #fafafa);
+        }
+
+        /* Gold border effect - top and bottom only */
+        .letter-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 4px;
+            background-color: var(--gold);
+        }
+        
+        .letter-container::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 4px;
+            background-color: var(--gold);
+        }
+
+        h1 {
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .content-text {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: #4a4a4a;
+        }
+
+        .highlight-box {
+            border-left: 3px solid var(--gold);
+            background-color: rgba(212, 175, 55, 0.05);
+            padding: 20px;
+            margin: 30px 0;
+            font-family: 'Montserrat', sans-serif; /* Cleaner font for instructions */
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .signature {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-top: 10px;
+            transform: rotate(-2deg);
+            display: inline-block;
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+        }
+
+        .contact-link {
+            color: var(--gold);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .contact-link:hover {
+            border-bottom: 1px solid var(--gold);
+            opacity: 0.8;
+        }
+
+        @media (max-width: 640px) {
+            .letter-container {
+                padding: 40px 25px;
+            }
+            .signature {
+                font-size: 2.5rem;
+            }
+            .content-text {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="letter-container fade-in">
+        
+        <!-- Opening -->
+        <div class="mb-8">
+            <p class="content-text font-semibold">Dear Friends,</p>
+        </div>
+
+        <!-- Main Body -->
+        <div class="space-y-6 content-text">
+            <p>
+                I wanted to share a quick update with you personally.
+            </p>
+            <p>
+                Due to a change in plans, we are pivoting our business direction. Because of this strategic shift, we have made the difficult decision to shut down our course business for the time being.
+            </p>
+            <p>
+                I want to express my deepest gratitude for your support and trust. It has genuinely meant a lot to us at Finest Enterprises.
+            </p>
+
+            <!-- Important Info Block -->
+            <div class="highlight-box">
+                <p class="mb-3 font-semibold text-gray-800 uppercase tracking-widest text-xs">Course Access Information</p>
+                <p class="mb-4">
+                    If you have paid for any of our courses, <strong>we have already sent the Google Drive link for course access to your email.</strong>
+                </p>
+                <p>
+                    If you haven't received it, or if you face any issues accessing the drive, please email us directly at:
+                    <br>
+                    <a href="mailto:mousam@creativeagencyblueprint.com" class="contact-link">mousam@creativeagencyblueprint.com</a>
+                </p>
+            </div>
+
+            <p>
+                If we decide to start a new program in the future, you will be the first to know.
+            </p>
+        </div>
+
+        <!-- Sign Off -->
+        <div class="mt-12">
+            <p class="content-text mb-2">Warm regards,</p>
+            
+            <!-- Signature -->
+            <div class="signature">Mousam Chatterjee</div>
+            
+            <div class="mt-4 font-sans text-sm tracking-wide text-gray-500 uppercase">
+                Finest Enterprises
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
