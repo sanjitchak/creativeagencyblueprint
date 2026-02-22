@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Complete - Welcome to Agency Funnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #000; color: #fff; }
+        .pulse-btn { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7); }
+            70% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(250, 204, 21, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); }
+        }
+        .bounce-in { animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards; }
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="antialiased font-sans bg-[#111] text-white min-h-screen flex flex-col">
+
+    <!-- Main Content -->
+    <div class="flex-grow flex flex-col items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
+        
+        <div class="w-full max-w-3xl bg-[#1a1a1a] rounded-2xl shadow-2xl border border-gray-800 overflow-hidden">
+            
+            <!-- Success Header -->
+            <div class="bg-black py-10 px-6 text-center border-b border-gray-800 relative overflow-hidden">
+                <!-- Decorative background elements -->
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full flex justify-center items-center opacity-10 pointer-events-none">
+                    <div class="w-64 h-64 bg-yellow-500 rounded-full blur-3xl"></div>
+                </div>
+
+                <div class="bounce-in inline-flex items-center justify-center w-20 h-20 bg-green-500 rounded-full mb-6 shadow-[0_0_20px_rgba(34,197,94,0.4)] relative z-10">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black mb-3 text-white tracking-tight relative z-10 uppercase italic">
+                    CONGRATULATIONS!
+                </h1>
+                <p class="text-lg text-yellow-400 font-bold tracking-widest uppercase relative z-10">Your Order Is Complete</p>
+            </div>
+
+            <!-- Access Section -->
+            <div class="p-8 sm:p-12 text-center">
+                <h2 class="text-2xl font-bold mb-4 text-white">Welcome to Agency Funnel</h2>
+                <p class="text-gray-300 mb-8 max-w-xl mx-auto font-medium leading-relaxed">
+                    You've just taken the exact first step I took to go from earning ₹500 per reel to landing ₹1L+ clients. Your entire system is ready and waiting for you below.
+                </p>
+
+                <!-- The Big Button -->
+                <div class="mb-10">
+                    <a href="https://drive.google.com/drive/folders/1UIRruhfRtjZqFhvxmBpNT5TfPZUfSto_?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex flex-col items-center justify-center w-full max-w-lg mx-auto bg-yellow-400 hover:bg-yellow-500 text-black py-5 px-6 rounded-lg shadow-[0_0_25px_rgba(250,204,21,0.3)] transition-all pulse-btn group">
+                        <span class="font-black text-xl sm:text-2xl uppercase tracking-tight flex items-center mb-1">
+                            <svg class="w-6 h-6 mr-2 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            ACCESS THE COURSE NOW
+                        </span>
+                        <span class="text-xs font-bold opacity-80 uppercase tracking-widest">(Opens Google Drive folder)</span>
+                    </a>
+                </div>
+
+                <!-- Next Steps Box -->
+                <div class="bg-[#111] border border-gray-800 rounded-xl p-6 text-left max-w-lg mx-auto shadow-inner">
+                    <h3 class="text-yellow-500 font-bold uppercase tracking-wider mb-4 flex items-center text-sm">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
+                        Your Quick Start Checklist
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 bg-yellow-400 text-black rounded-full flex items-center justify-center font-black text-sm mt-0.5 mr-3">1</div>
+                            <div>
+                                <strong class="text-white block text-sm">Bookmark the Drive Link</strong>
+                                <span class="text-xs text-gray-400">Save the Google Drive link so you don't lose access.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-6 h-6 bg-yellow-400 text-black rounded-full flex items-center justify-center font-black text-sm mt-0.5 mr-3">2</div>
+                            <div>
+                                <strong class="text-white block text-sm">Start with the 10-Day Plan</strong>
+                                <span class="text-xs text-gray-400">Don't just watch, implement. Open the 10-Day Fast Start Plan first.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-black text-white py-8 border-t border-gray-800 mt-auto">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-xs text-gray-400 font-medium mb-4">This product is brought to you and copyrighted by Finest Enterprises</p>
+            <div class="space-x-4 sm:space-x-6 mb-6 text-center flex flex-wrap justify-center gap-y-2">
+                <a href="https://www.creativeagencyblueprint.com/shipping.html" class="text-xs text-gray-500 hover:text-white transition">Shipping Policy</a> 
+                <span class="text-gray-700 hidden sm:inline">|</span>
+                <a href="https://www.creativeagencyblueprint.com/privacy.html" class="text-xs text-gray-500 hover:text-white transition">Privacy Policy</a> 
+                <span class="text-gray-700 hidden sm:inline">|</span>
+                <a href="https://www.creativeagencyblueprint.com/terms.html" class="text-xs text-gray-500 hover:text-white transition">Terms & Conditions</a> 
+                <span class="text-gray-700 hidden sm:inline">|</span>
+                <a href="https://www.creativeagencyblueprint.com/refund.html" class="text-xs text-gray-500 hover:text-white transition">Refund Policy</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
